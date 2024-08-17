@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 // Middleware
 app.use(express.json()); // Parse JSON bodies
 app.use(cors({
-  origin: 'http://example.com', // Replace with your frontend origin
+  origin: 'https://www.elharley.com', // Replace with your frontend origin
   methods: ['GET', 'POST','PUT','DELETE','PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
