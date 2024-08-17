@@ -21,7 +21,8 @@ function findImports(importPath) {
 
 const compileContract = () => {
     try {
-        const source = fs.readFileSync('ERC20.sol', 'utf8');
+          let tokenPath = path.join(process.cwd(), 'ERC20.sol');
+  let source = fs.readFileSync(tokenPath);
         const input = {
             language: 'Solidity',
             sources: {
